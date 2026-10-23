@@ -1,0 +1,58 @@
+/* v0.5: editorial refinements; the cover, tree and scan movement keep their geometry. */
+#tolstoy-project .intro{padding-block:108px 112px}
+#tolstoy-project .intro-grid{grid-template-columns:24% 1fr;gap:7%}
+#tolstoy-project .intro .large-copy{margin-top:36px}
+#tolstoy-project .intro .body-copy{max-width:700px}
+#tolstoy-project .portrait-credit{font-size:9px;color:#70665e}
+/* One light mat, one image ratio, one typographic rhythm across all four projects. */
+#tolstoy-project .project-grid{gap:36px 40px}
+#tolstoy-project .project-card{grid-template-columns:42% 1fr;gap:24px;padding-top:0}
+#tolstoy-project .project-visual{aspect-ratio:3/2;height:auto;max-height:none;background:#e9dfd1;color:#78543d}
+#tolstoy-project .project-visual img{width:100%;height:100%;object-fit:contain;padding:8px;filter:grayscale(.85) sepia(.15);transform:none;transition:none}
+#tolstoy-project .project-card:hover .project-visual img{transform:none}
+#tolstoy-project .rover-visual .rover-photo{object-fit:contain;object-position:center;filter:saturate(.72) contrast(.94);transform:none}
+#tolstoy-project .word-visual>span{font-size:clamp(55px,5.5vw,88px);line-height:1;transform:translateY(-5px)}
+#tolstoy-project .project-visual small{bottom:12px;color:#78543d;font-size:7px;line-height:1.5;letter-spacing:.1em}
+#tolstoy-project .voice-visual svg{width:85%;height:72%;stroke-width:1.7;transform:translateY(-5px)}
+#tolstoy-project .card-copy{padding:0}
+#tolstoy-project .card-copy h3{margin:12px 0;font-size:clamp(26px,2.2vw,35px)}
+#tolstoy-project .card-copy details{margin-top:12px}
+#tolstoy-project .card-copy details p{line-height:1.7}
+/* Complete archival prints, with captions underneath rather than over the photograph. */
+#tolstoy-project .object-panel{display:block;padding-top:54px}
+#tolstoy-project .object-content{display:grid;grid-template-columns:1.1fr 1fr;align-items:center}
+#tolstoy-project .object-content figure{min-height:0;padding:16px 28px 22px;background:#e9dfd1}
+#tolstoy-project .object-image{display:block;max-height:62svh;height:560px;width:100%;object-fit:contain}
+#tolstoy-project .object-content figcaption{position:static;margin-top:14px;font-size:10px;letter-spacing:0;line-height:1.7;text-align:left}
+#tolstoy-project .object-copy{padding:28px 38px}
+#tolstoy-project .object-navigation{padding:18px 28px;margin:0;justify-content:flex-end;border-top:1px solid #84776b55}
+#tolstoy-project .static-sequence h3{font-size:16px;margin-bottom:6px}
+#tolstoy-project:not(.enhanced) .hotspot{display:none}
+@media(max-width:1000px){
+  #tolstoy-project .intro{padding-block:72px}
+  #tolstoy-project .intro-grid{grid-template-columns:1fr;gap:28px}
+  #tolstoy-project .project-card{grid-template-columns:40% 1fr;gap:16px}
+  #tolstoy-project .project-visual small{font-size:5px;bottom:7px}
+  #tolstoy-project .word-visual>span{font-size:53px}
+  #tolstoy-project .card-copy h3{font-size:25px}
+}
+@media(max-width:600px){
+  #tolstoy-project .intro{padding-block:52px 64px}
+  #tolstoy-project .intro-grid{gap:21px}
+  #tolstoy-project .intro .large-copy{margin-top:24px}
+  #tolstoy-project .project-grid{gap:34px}
+  #tolstoy-project .project-card{grid-template-columns:1fr;gap:19px}
+  #tolstoy-project .project-visual{aspect-ratio:3/2}
+  #tolstoy-project .project-visual img{padding:10px}
+  #tolstoy-project .word-visual>span{font-size:88px}
+  #tolstoy-project .project-visual small{font-size:7px;bottom:16px}
+  #tolstoy-project .card-copy h3{font-size:28px;margin:10px 0}
+  #tolstoy-project .card-copy h3 br{display:none}
+  #tolstoy-project .card-copy>p:not(.eyebrow):not(.caption){max-width:none}
+  #tolstoy-project .object-content{grid-template-columns:1fr}
+  #tolstoy-project .object-content figure{padding:10px 22px 18px}
+  #tolstoy-project .object-image{height:270px;max-height:34svh}
+  #tolstoy-project .object-content figcaption{font-size:9px;margin-top:10px}
+  #tolstoy-project .object-copy{padding:22px 24px}
+  #tolstoy-project .object-navigation{padding:14px 24px;justify-content:flex-start}
+}

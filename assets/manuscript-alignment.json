@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 3,
+  "geometry": "baseline",
+  "source": "../985220.xml",
+  "original": {
+    "src": "985220.jpg",
+    "width": 618,
+    "height": 800
+  },
+  "image": {
+    "src": "manuscript-crop.webp",
+    "width": 554,
+    "height": 702
+  },
+  "crop": {
+    "left": 46,
+    "top": 54,
+    "width": 554,
+    "height": 702
+  },
+  "transform": {
+    "scale": 1,
+    "translateX": -46,
+    "translateY": -54,
+    "formula": "x_crop = x_original - 46; y_crop = y_original - 54"
+  },
+  "fragments": [
+    {
+      "id": "f01",
+      "htmlSelector": "[data-ms-fragment=\"0\"] .ms-quote",
+      "lines": [
+        {
+          "id": "l",
+          "readingOrder": 0,
+          "transkribusText": "Ведь ты заметь, кто полко",
+          "originalBaseline": "59,335 397,338",
+          "points": [
+            [
+              13,
+              281
+            ],
+            [
+              351,
+              284
+            ]
+          ]
+        },
+        {
+          "id": "l_1",
+          "readingOrder": 1,
+          "transkribusText": "водцы у Наполеона? Нас уве",
+          "originalBaseline": "62,358 403,365 402,366",
+          "points": [
+            [
+              16,
+              304
+            ],
+            [
+              357,
+              311
+            ],
+            [
+              356,
+              312
+            ]
+          ]
+        },
+        {
+          "id": "l_2",
+          "readingOrder": 2,
+          "transkribusText": "ряют, что это всё гении.",
+          "originalBaseline": "61,386 380,388",
+          "points": [
+            [
+              15,
+              332
+            ],
+            [
+              334,
+              334
+            ]
+          ]
+        },
+        {
+          "id": "l_3",
+          "readingOrder": 3,
+          "transkribusText": "А кто они?",
+          "originalBaseline": "66,396 159,392",
+          "points": [
+            [
+              20,
+              342
+            ],
+            [
+              113,
+              338
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f02",
+      "htmlSelector": "[data-ms-fragment=\"1\"] .ms-quote",
+      "lines": [
+        {
+          "id": "l_4",
+          "readingOrder": 4,
+          "transkribusText": "Не родство ",
+          "originalBaseline": "243,482 382,482",
+          "points": [
+            [
+              197,
+              428
+            ],
+            [
+              336,
+              428
+            ]
+          ]
+        },
+        {
+          "id": "l_5",
+          "readingOrder": 5,
+          "transkribusText": "совпало, а для того, чтобы быть ",
+          "originalBaseline": "60,513 398,512",
+          "points": [
+            [
+              14,
+              459
+            ],
+            [
+              352,
+              458
+            ]
+          ]
+        },
+        {
+          "id": "l_6",
+          "readingOrder": 6,
+          "transkribusText": "полководцем, нужно быть нич",
+          "originalBaseline": "62,538 389,538",
+          "points": [
+            [
+              16,
+              484
+            ],
+            [
+              343,
+              484
+            ]
+          ]
+        },
+        {
+          "id": "l_7",
+          "readingOrder": 7,
+          "transkribusText": "тожеством, а ничтожных ",
+          "originalBaseline": "65,564 373,565",
+          "points": [
+            [
+              19,
+              510
+            ],
+            [
+              327,
+              511
+            ]
+          ]
+        },
+        {
+          "id": "l_8",
+          "readingOrder": 8,
+          "transkribusText": "много.  Ежели бы кинуть жребий, ",
+          "originalBaseline": "59,591 391,592",
+          "points": [
+            [
+              13,
+              537
+            ],
+            [
+              345,
+              538
+            ]
+          ]
+        },
+        {
+          "id": "l_9",
+          "readingOrder": 9,
+          "transkribusText": "было бы то же.",
+          "originalBaseline": "58,620 132,615 225,615",
+          "points": [
+            [
+              12,
+              566
+            ],
+            [
+              86,
+              561
+            ],
+            [
+              179,
+              561
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

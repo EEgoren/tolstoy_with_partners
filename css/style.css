@@ -1,0 +1,176 @@
+/* Shared v0.2 design system and unchanged sections. Narrative scenes: scenes.css. */
+@font-face{font-family:TolstoyPrata;src:url('../assets/fonts/Prata-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:TolstoyManrope;src:url('../assets/fonts/Manrope-Variable.ttf') format('truetype');font-weight:200 800;font-style:normal;font-display:swap}
+#tolstoy-project{--black:#231F20;--milk:#FDF6ED;--ochre:#CE7E4C;--pink:#F4BFB0;--green:#1B4232;--serif:TolstoyPrata,Georgia,serif;--sans:TolstoyManrope,Arial,sans-serif;background:var(--milk);color:var(--black);font:400 16px/1.65 var(--sans);isolation:isolate;position:relative;overflow:clip}
+#tolstoy-project *,#tolstoy-project *::before,#tolstoy-project *::after{box-sizing:border-box}
+#tolstoy-project :where(h1,h2,h3,p,figure){margin:0}
+#tolstoy-project :where(button,a){-webkit-tap-highlight-color:transparent}
+#tolstoy-project a{color:inherit;text-underline-offset:5px}
+#tolstoy-project button{font:inherit;color:inherit;cursor:pointer;border-radius:0}
+#tolstoy-project img{display:block;max-width:100%;height:auto}
+#tolstoy-project :focus-visible{outline:3px solid var(--ochre);outline-offset:5px}
+#tolstoy-project ::selection{background:var(--ochre);color:var(--black)}
+#tolstoy-project [id]{scroll-margin-top:24px}
+#tolstoy-project .wrap{width:min(1500px,calc(100% - 112px));margin-inline:auto}
+#tolstoy-project .dark{background:var(--black);color:var(--milk)}
+#tolstoy-project .cream{background:var(--milk)}
+#tolstoy-project .accent{color:var(--ochre)}
+#tolstoy-project .eyebrow{font-size:10px;font-weight:650;letter-spacing:.16em;line-height:1.6}
+#tolstoy-project .caption{font-size:11px;line-height:1.7;color:#70665e}
+#tolstoy-project .dark .caption{color:#b8aea6}
+#tolstoy-project em{font-style:normal;color:inherit}
+#tolstoy-project .display{font:400 clamp(44px,6.4vw,100px)/1.18 var(--serif);letter-spacing:-.055em}
+#tolstoy-project .display em{color:#93705c}
+#tolstoy-project .dark .display em{color:var(--ochre)}
+#tolstoy-project .large-copy{font-size:clamp(21px,2vw,29px);line-height:1.55;letter-spacing:-.025em}
+#tolstoy-project .body-copy{font-size:16px;max-width:610px}
+#tolstoy-project .section-bar{display:flex;justify-content:space-between;gap:22px;border-top:1px solid #84776b66;padding-top:18px;font-size:10px;font-weight:600;letter-spacing:.14em;margin-bottom:64px}
+#tolstoy-project .dark .section-bar{border-color:#fdf6ed44}
+#tolstoy-project .text-link{display:flex;align-items:center;justify-content:space-between;gap:24px;width:fit-content;max-width:100%;font-size:12px;font-weight:650;padding:14px 0 10px;border-bottom:1px solid currentColor;text-decoration:none;line-height:1.7}
+#tolstoy-project .text-link span{color:var(--ochre);font-size:22px;transition:transform .2s}
+#tolstoy-project .text-link:hover span{transform:translate(3px,-3px)}
+#tolstoy-project .skip{position:absolute;top:10px;left:12px;z-index:30;transform:translateY(-160%);background:var(--milk);color:var(--black);padding:12px}
+#tolstoy-project .skip:focus{transform:none}
+#tolstoy-project .topbar{position:absolute;top:0;left:4%;right:4%;height:100px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #fdf6ed40;z-index:5}
+#tolstoy-project .brand{display:flex;flex-shrink:0;align-items:center;text-decoration:none}
+#tolstoy-project .brand img{height:40px;width:auto}
+#tolstoy-project .topbar nav{display:flex;gap:30px}
+#tolstoy-project .topbar nav a{font-size:11px;text-decoration:none}
+#tolstoy-project .topbar nav a:hover{color:var(--ochre)}
+#tolstoy-project .anniversary{font-size:12px;letter-spacing:.09em}
+#tolstoy-project .anniversary i{font-style:normal;color:var(--ochre);padding-inline:10px}
+#tolstoy-project .hero-subtitle{margin-top:28px;font:400 clamp(25px,3.1vw,48px)/1.23 var(--serif);letter-spacing:-.04em}
+#tolstoy-project .hero-subtitle em{color:var(--ochre)}
+#tolstoy-project .hero-lede{font-size:12px;line-height:1.8;margin-top:24px;color:#d1c6bd}
+#tolstoy-project .hero-bottom{position:absolute;bottom:32px;left:4%;right:4%;z-index:4;display:flex;justify-content:space-between;gap:15px;align-items:center;font-size:8px;letter-spacing:.14em}
+#tolstoy-project .hero-bottom a{text-decoration:none;display:flex;gap:25px;align-items:center}
+#tolstoy-project .hero-bottom a span{font-size:26px;color:var(--ochre)}
+#tolstoy-project .intro{padding:135px 0 140px;position:relative;z-index:2}
+#tolstoy-project .intro-grid{display:grid;grid-template-columns:28% 1fr;gap:3%}
+#tolstoy-project .intro-grid>.eyebrow{padding-top:12px}
+#tolstoy-project .short-rule{display:inline-block;width:24px;height:1px;background:var(--ochre);vertical-align:middle;margin-right:12px}
+#tolstoy-project .intro .large-copy{max-width:750px;margin-top:46px}
+#tolstoy-project .intro .body-copy{margin-top:24px}
+#tolstoy-project .intro .caption{margin-top:26px}
+#tolstoy-project details{margin-top:25px;max-width:430px;font-size:11px}
+#tolstoy-project summary{cursor:pointer;text-underline-offset:4px;text-decoration:underline}
+#tolstoy-project details p{padding-top:12px;color:#70665e}
+#tolstoy-project .button-link{display:inline-flex;justify-content:space-between;align-items:center;gap:32px;background:var(--milk);color:var(--black);padding:21px 26px;font-size:12px;font-weight:600;text-decoration:none}
+#tolstoy-project .button-link:hover{background:var(--ochre)}
+#tolstoy-project .estate{padding:100px 0 110px}
+#tolstoy-project .estate-heading{display:grid;grid-template-columns:1fr 1fr;gap:15%;align-items:center;margin-bottom:55px}
+#tolstoy-project .estate-heading>div>p:last-child{font-size:14px;max-width:430px;margin-top:20px}
+#tolstoy-project .estate-scene{position:relative;background:#e9dfd1}
+#tolstoy-project .estate-map{width:100%;height:auto;aspect-ratio:1400/750;object-fit:cover}
+#tolstoy-project .hotspot{position:absolute;background:var(--milk);color:var(--black);border:1px solid var(--black);padding:12px 15px;display:flex;align-items:center;gap:15px;font-size:12px;min-height:48px}
+#tolstoy-project .hotspot span{font-size:9px;color:#92512d}
+#tolstoy-project .hotspot i{font-style:normal;font-size:22px;color:#92512d}
+#tolstoy-project .hotspot:hover{background:var(--black);color:var(--milk)}
+#tolstoy-project .spot-dog{left:19%;top:68%}
+#tolstoy-project .spot-bike{left:62%;top:50%}
+#tolstoy-project .spot-apple{left:18%;top:24%}
+#tolstoy-project .scene-caption{position:absolute;bottom:18px;left:22px;font-size:8px;letter-spacing:.1em;color:#51483e}
+#tolstoy-project .estate-bottom{display:flex;justify-content:space-between;gap:25px;align-items:center;margin-top:22px}
+#tolstoy-project .object-dialog{position:fixed;inset:0;width:min(1080px,calc(100% - 48px));max-height:90svh;max-width:none;border:0;padding:0;background:var(--milk);color:var(--black);font-family:var(--sans);overflow:auto}
+#tolstoy-project .object-dialog::backdrop{background:#171415d9}
+#tolstoy-project .object-dialog[open]{animation:tl-layer-in .3s ease both}
+#tolstoy-project .object-panel{position:relative;display:grid;grid-template-columns:1.1fr 1fr;align-items:center}
+#tolstoy-project .dialog-close{position:absolute;right:22px;top:18px;background:transparent;border:0;padding:7px;display:flex;align-items:center;gap:18px;z-index:2;font-size:11px;min-height:44px}
+#tolstoy-project .dialog-close span{font-size:27px}
+#tolstoy-project .object-panel figure{background:#e9dfd1;min-height:500px;display:flex;flex-direction:column;justify-content:center;padding:30px}
+#tolstoy-project .object-panel figcaption{font-size:8px;letter-spacing:.13em;text-align:center}
+#tolstoy-project .object-copy{padding:65px 38px 35px;min-width:0}
+#tolstoy-project .object-copy h2{font:48px/1.4 var(--serif);letter-spacing:-.05em;margin:20px 0}
+#tolstoy-project .object-copy>p:not(.caption){font-size:14px}
+#tolstoy-project .object-copy .caption{margin-top:24px}
+#tolstoy-project .object-copy .text-link{margin-top:20px}
+#tolstoy-project .object-navigation{display:flex;gap:15px;flex-wrap:wrap;border-top:1px solid #84776b55;margin-top:35px;padding-top:22px}
+#tolstoy-project .object-navigation button{background:transparent;border:0;border-bottom:1px solid transparent;font-size:11px;padding:8px 0}
+#tolstoy-project .object-navigation button[aria-pressed=true]{border-color:#92512d;color:#92512d}
+#tolstoy-project .manuscript-heading{padding-top:100px;padding-bottom:65px}
+#tolstoy-project .manuscript-heading .display{font-size:clamp(43px,5.5vw,85px)}
+#tolstoy-project .manuscript-heading .body-copy{margin-top:32px;margin-left:42%;font-size:15px;max-width:580px}
+#tolstoy-project .closing{padding:100px 0 40px}
+#tolstoy-project .closing .display{font-size:clamp(55px,8vw,130px)}
+#tolstoy-project .closing-copy{margin:45px 0 80px 52%;max-width:580px}
+#tolstoy-project .closing-copy>p:nth-child(2){font-size:14px;margin-top:25px}
+#tolstoy-project .closing-copy .text-link{margin-top:20px}
+#tolstoy-project .closing-date{font:clamp(42px,10vw,170px)/1.2 var(--serif);letter-spacing:-.04em;border-top:1px solid #84776b66;padding-top:42px}
+#tolstoy-project .closing-date span{color:var(--ochre)}
+#tolstoy-project .footer{padding:30px 0;background:var(--black);color:var(--milk)}
+#tolstoy-project .footer>.wrap{display:flex;justify-content:space-between;gap:25px;font-size:8px;letter-spacing:.1em}
+#tolstoy-project .footer a{text-decoration:none}
+#tolstoy-project .noscript-note{padding:24px;font-size:14px;background:var(--milk)}
+@keyframes tl-layer-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(max-width:1000px){
+#tolstoy-project .wrap{width:calc(100% - 64px)}
+#tolstoy-project .topbar nav{gap:18px}
+#tolstoy-project .anniversary{display:none}
+#tolstoy-project .intro-grid{grid-template-columns:1fr;gap:35px}
+#tolstoy-project .intro{padding-block:90px}
+#tolstoy-project .estate-heading{gap:8%}
+#tolstoy-project .hotspot{padding:9px 12px;gap:10px}
+#tolstoy-project .object-copy{padding-inline:25px}
+#tolstoy-project .object-copy h2{font-size:40px}
+}
+@media(max-width:600px){
+#tolstoy-project .wrap{width:calc(100% - 40px)}
+#tolstoy-project .display{font-size:43px;letter-spacing:-.06em}
+#tolstoy-project .section-bar{font-size:8px;margin-bottom:40px;padding-top:14px;gap:20px}
+#tolstoy-project .section-bar>span:last-child{max-width:46%;text-align:right}
+#tolstoy-project .eyebrow{font-size:8px}
+#tolstoy-project .caption{font-size:10px}
+#tolstoy-project .topbar{height:77px;left:20px;right:20px;align-items:center}
+#tolstoy-project .brand img{height:28px}
+#tolstoy-project .topbar nav{gap:12px}
+#tolstoy-project .topbar nav a{font-size:9px}
+#tolstoy-project .topbar nav a:nth-child(2),#tolstoy-project .topbar nav a:nth-child(3){display:none}
+#tolstoy-project .hero-subtitle{font-size:30px;margin-top:24px}
+#tolstoy-project .hero-lede{font-size:10px;margin-top:25px;line-height:1.8;max-width:140px}
+#tolstoy-project .hero-bottom{left:24px;right:24px;bottom:25px;font-size:6px;letter-spacing:.1em}
+#tolstoy-project .hero-bottom>span:nth-child(2){display:none}
+#tolstoy-project .intro{padding:65px 0 80px}
+#tolstoy-project .intro-grid{gap:26px}
+#tolstoy-project .intro .large-copy{margin-top:30px;font-size:20px}
+#tolstoy-project .body-copy{font-size:14px}
+#tolstoy-project .estate{padding-block:65px}
+#tolstoy-project .estate-heading{grid-template-columns:1fr;gap:25px;margin-bottom:30px}
+#tolstoy-project .estate-heading>div>p:last-child{font-size:13px}
+#tolstoy-project .estate-scene{padding-bottom:152px}
+#tolstoy-project .estate-map{aspect-ratio:1/1.1;object-fit:cover;object-position:49% center}
+#tolstoy-project .hotspot{left:14px;right:14px;justify-content:space-between;gap:12px;font-size:12px;min-height:44px;padding:7px 14px}
+#tolstoy-project .hotspot span{margin-right:auto}
+#tolstoy-project .spot-dog{top:auto;bottom:108px}
+#tolstoy-project .spot-bike{top:auto;bottom:60px}
+#tolstoy-project .spot-apple{top:auto;bottom:12px}
+#tolstoy-project .scene-caption{top:10px;bottom:auto;left:10px;right:10px;font-size:6px;line-height:1.6;max-width:220px}
+#tolstoy-project .estate-bottom{display:block}
+#tolstoy-project .estate-bottom .text-link{margin-top:14px}
+#tolstoy-project .object-dialog{width:calc(100% - 24px);max-height:92svh}
+#tolstoy-project .object-panel{grid-template-columns:1fr}
+#tolstoy-project .object-panel figure{min-height:0;padding:25px 35px 20px}
+#tolstoy-project .object-image{max-height:240px;width:100%;object-fit:contain}
+#tolstoy-project .object-panel figcaption{font-size:7px}
+#tolstoy-project .object-copy{padding:25px 24px 28px}
+#tolstoy-project .object-copy h2{font-size:36px;margin:10px 0}
+#tolstoy-project .object-copy>p:not(.caption){font-size:12px}
+#tolstoy-project .object-copy .text-link{font-size:10px}
+#tolstoy-project .dialog-close{top:7px;right:10px;font-size:9px;background:var(--milk);padding-inline:8px}
+#tolstoy-project .manuscript-heading{padding-top:65px;padding-bottom:45px}
+#tolstoy-project .manuscript-heading .display{font-size:39px}
+#tolstoy-project .manuscript-heading .body-copy{margin:26px 0 0;font-size:13px}
+#tolstoy-project .closing{padding-top:65px}
+#tolstoy-project .closing .display{font-size:53px}
+#tolstoy-project .closing-copy{margin:35px 0 50px}
+#tolstoy-project .closing-copy>p:nth-child(2){font-size:13px}
+#tolstoy-project .closing-date{font-size:48px;padding-top:30px}
+#tolstoy-project .footer>.wrap{flex-wrap:wrap;font-size:7px;gap:18px}
+#tolstoy-project .footer>.wrap>span:first-child{flex-basis:100%}
+}
+@media(max-height:740px) and (min-width:601px){
+#tolstoy-project .hero-subtitle{font-size:28px;margin-top:16px}
+#tolstoy-project .hero-lede{font-size:10px;margin-top:16px}
+}
+@media(prefers-reduced-motion:reduce){
+#tolstoy-project *,#tolstoy-project *::before,#tolstoy-project *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
